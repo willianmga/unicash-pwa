@@ -3,10 +3,16 @@ class HomeController {
 
     constructor() {
 
+        this.homeTemplate = new HomeTemplate();
+
+        this.summaryData = {
+            'balance': 50
+        };
+
     }
 
-    sayHello() {
-        return '<h1>HELLO WORLD!</h1>';
+    render() {
+        this.homeTemplate.render(this.summaryData);
     }
 
 }

@@ -2,7 +2,7 @@
 class App {
 
     constructor() {
-        this.homeTemplate = new HomeTemplate();
+        this.homeController = new HomeController();
         this.renderHome();
     }
 
@@ -11,6 +11,6 @@ class App {
     }
 
     renderHome() {
-        this.homeTemplate.render();
+        this.homeController.render();
     }
 }

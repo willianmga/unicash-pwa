@@ -3,11 +3,9 @@ class HomeTemplate {
 
     constructor() {
 
-        console.log(new HomeController().sayHello());
-
     }
 
-    render() {
+    render(summary) {
         document.querySelector("#content").innerHTML = `
             <nav class="nav-extended green darken-1">
                 <div class="nav-wrapper">
@@ -17,7 +15,7 @@ class HomeTemplate {
                     <div class="container">
                         <div class="row">
                             <div class="col s12">
-                                <h3 class="center-align">R$ 50,00</h3>
+                                <h3 class="center-align">R$ ${summary.balance}</h3>
                                 <p class="center-align">Saldo</p>                            
                             </div>
                         </div>
