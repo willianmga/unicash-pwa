@@ -19,17 +19,10 @@ class RefundMoneyController {
 
         this.transactionsService.refund(data)
             .then((refundResponse) => {
-                M.toast({
-                    html: 'Operação concluída com sucesso',
-                    classes: 'green'
-                })
-                controller.renderHome();
+                controller.successMessage(refundResponse.message);
             })
             .catch((error) => {
-                M.toast({
-                    html: "Ops, ocorreu um erro inesperado",
-                    classes: 'red'
-                })
+                controller.errorMessage(error.message);
             });
 
     }

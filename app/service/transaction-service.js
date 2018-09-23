@@ -144,6 +144,7 @@ class TransactionService {
 
             return {
                 "status": "SUCESSO",
+                "message": "Transação realizada com sucesso!",
                 "currentBalance": this.currentBalance,
                 "timestamp": new Date()
             }

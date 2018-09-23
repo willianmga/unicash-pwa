@@ -12,20 +12,13 @@ class AddFundsController {
 
     deposit(data) {
 
-        this.transactionsService.deposit(data).then((transactionResponse) => {
-            M.toast({
-                html: 'Transação concluída com sucesso',
-                classes: "green"
+        this.transactionsService.deposit(data)
+            .then((transactionResponse) => {
+                controller.successMessage(transactionResponse.message);
             })
-            console.log(transactionResponse);
-            controller.renderHome();
-        })
-        .catch(error => {
-            M.toast({
-                html: 'Ops, ocorreu um erro inesperado!',
-                classes: "red"
-            })
-        });
+            .catch(error => {
+                controller.errorMessage(error.message);
+            });
     }
 
 }

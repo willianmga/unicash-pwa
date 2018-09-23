@@ -53,6 +53,7 @@ class RecieveTemplate{
             .decodeFromCamera(video, function(er,res){
                 console.log(res)
                 if(res != undefined){
+                    video = null;
                     controller.recieve(res);
                 }
             });
