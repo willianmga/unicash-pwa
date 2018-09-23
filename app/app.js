@@ -34,7 +34,7 @@ class App {
         };
 
         this.addFundsController.addTransaction(data);
-
     }
+
 
 }
