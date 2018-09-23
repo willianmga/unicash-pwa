@@ -116,6 +116,10 @@ class TransactionService {
 
     _addTransaction(transaction) {
 
+        if (isNaN(transaction.amount)) {
+            throw new Error("Valor informado não é um valor válido!");
+        }
+
         if (this._checkFunds(transaction)) {
 
             this._updateCurrentBalance(transaction);

@@ -77,7 +77,6 @@ class App {
             classes: "red"
         });
 
-        controller.renderHome();
     }
 
 }
