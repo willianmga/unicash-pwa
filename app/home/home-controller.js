@@ -4,11 +4,11 @@ class HomeController {
     constructor() {
 
         this.homeTemplate = new HomeTemplate();
-        this.historyController = new HistoryController();
+        this.transactionService = ServiceFactory.getTransactionService();
 
         this.summaryData = {
-            "balance": this.historyController.getBalance(),
-            "historySummary": this.historyController.getHistorySummary()
+            "balance": this.transactionService.getBalance(),
+            "historySummary": this.transactionService.getHistorySummary()
         };
 
     }

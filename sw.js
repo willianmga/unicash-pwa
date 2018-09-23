@@ -2,6 +2,8 @@ var cacheName = 'cache-one';
 
 var appShellFiles = [
   '/app/app.js',
+  '/app/service/service-factory.js',
+  '/app/service/transaction-service.js',
   '/app/account/account-controller.js',
   '/app/home/home-template.js',
   '/app/home/home-controller.js',
