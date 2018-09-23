@@ -55,7 +55,11 @@ class TransactionService {
                 "timestamp": new Date()
             };
 
-            resolve(ctr._addTransaction(transaction));
+            try {
+                resolve(ctr._addTransaction(transaction));
+            } catch (e) {
+                reject(e);
+            }
 
         });
 
@@ -78,7 +82,33 @@ class TransactionService {
                 "timestamp": new Date()
             };
 
-            resolve(ctr._addTransaction(transaction));
+            try {
+                resolve(ctr._addTransaction(transaction));
+            } catch (e) {
+                reject(e);
+            }
+        });
+
+    }
+
+    pay(data) {
+
+        let ctr = this;
+
+        return new Promise(function (resolve, reject) {
+
+            const transaction = {
+                "type": "PAGAMENTO",
+                "amount": data.amount,
+                "description": "Pagamento Cantina Bloco 8",
+                "timestamp": new Date()
+            };
+
+            try {
+                resolve(ctr._addTransaction(transaction));
+            } catch (e) {
+                reject(e);
+            }
 
         });
 

@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6133df39-0455-4bd0-bd6c-7a4b31ac56e8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/refund-money/refund-money-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/refund-money/refund-money-controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/payment/payment-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/payment/payment-controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/payment/payment-template.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/payment/payment-template.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/service/transaction-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/service/transaction-service.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,16 +20,34 @@
         <entry file="file://$PROJECT_DIR$/app/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="485">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
+              <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="refund-money-controller.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="payment-controller.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/payment/payment-controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="transaction-service.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/service/transaction-service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="383">
+              <caret line="121" column="13" lean-forward="true" selection-start-line="121" selection-start-column="13" selection-end-line="121" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="refund-money-controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/refund-money/refund-money-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+            <state relative-caret-position="182">
+              <caret line="14" selection-start-line="14" selection-end-line="30" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -74,10 +94,12 @@
         <option value="$PROJECT_DIR$/app/home/home-controller.js" />
         <option value="$PROJECT_DIR$/app/refund-money/refund-money-template.js" />
         <option value="$PROJECT_DIR$/app/add_funds/add-funds-controller.js" />
-        <option value="$PROJECT_DIR$/app/service/transaction-service.js" />
         <option value="$PROJECT_DIR$/sw.js" />
-        <option value="$PROJECT_DIR$/app/app.js" />
         <option value="$PROJECT_DIR$/app/refund-money/refund-money-controller.js" />
+        <option value="$PROJECT_DIR$/app/service/transaction-service.js" />
+        <option value="$PROJECT_DIR$/app/payment/payment-template.js" />
+        <option value="$PROJECT_DIR$/app/app.js" />
+        <option value="$PROJECT_DIR$/app/payment/payment-controller.js" />
       </list>
     </option>
   </component>
@@ -117,24 +139,6 @@
               <item name="unicash-pwa" type="b2602c69:ProjectViewProjectNode" />
               <item name="unicash-pwa" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="unicash-pwa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="unicash-pwa" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="add_funds" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="unicash-pwa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="unicash-pwa" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="history" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="unicash-pwa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="unicash-pwa" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="unicash-pwa" type="b2602c69:ProjectViewProjectNode" />
@@ -235,12 +239,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1537667408928</updated>
-      <workItem from="1537667410340" duration="19946000" />
+      <workItem from="1537667410340" duration="21724000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19946000" />
+    <option name="totallyTimeSpent" value="21724000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
@@ -259,7 +263,7 @@
       <window_info anchor="bottom" id="Terminal" sideWeight="0.4988161" weight="0.43288085" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19810577" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19810577" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="right" id="Database" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32880846" />
@@ -382,24 +386,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/app.js">
+    <entry file="file://$PROJECT_DIR$/app/refund-money/refund-money-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        <state relative-caret-position="182">
+          <caret line="14" selection-start-line="14" selection-end-line="30" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/payment/payment-template.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/service/transaction-service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-416">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        <state relative-caret-position="383">
+          <caret line="121" column="13" lean-forward="true" selection-start-line="121" selection-start-column="13" selection-end-line="121" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/refund-money/refund-money-controller.js">
+    <entry file="file://$PROJECT_DIR$/qrcode.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="40" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+        <state relative-caret-position="-1275">
+          <folding>
+            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/payment/payment-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
         </state>
       </provider>
     </entry>

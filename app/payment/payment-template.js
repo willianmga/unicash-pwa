@@ -21,7 +21,7 @@ class PaymentTemplate{
                     </div>
                 </form>
                 <div class="center-align">
-                    <button onclick="controller.renderQrCode('asd')" class="btn waves-effect waves-light btn-large blue" name="action">Submit
+                    <button class="btn waves-effect waves-light btn-large blue" name="action" onclick="controller.pay()">Submit
                         <i class="material-icons right">send</i>
                     </button>
                 </div>

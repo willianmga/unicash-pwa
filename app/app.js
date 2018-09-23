@@ -48,4 +48,16 @@ class App {
 
     }
 
+    pay() {
+
+        const amount = parseFloat(document.querySelector("#valor").value);
+
+        this.paymentController.pay(amount);
+
+    }
+
+    generateQrCode(value) {
+        new QRCode(document.getElementById("qrcode"), value);
+    }
+
 }
