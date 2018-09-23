@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6133df39-0455-4bd0-bd6c-7a4b31ac56e8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/recieve/recieve-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/recieve/recieve-controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/recieve/recieve-template.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/recieve/recieve-template.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,10 +48,22 @@
       <file leaf-file-name="recieve-template.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/recieve/recieve-template.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="72" column="44" lean-forward="true" selection-start-line="72" selection-start-column="44" selection-end-line="72" selection-end-column="44" />
+            <state relative-caret-position="417">
+              <caret line="67" column="11" lean-forward="true" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="11" />
               <folding>
                 <element signature="n#style#0;n#video#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="qrcode.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/qrcode.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-204">
+              <folding>
+                <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -79,6 +90,7 @@
       <find>setTimeout</find>
       <find>e.</find>
       <find>decodeFrom</find>
+      <find>user</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -263,12 +275,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1537667408928</updated>
-      <workItem from="1537667410340" duration="36085000" />
+      <workItem from="1537667410340" duration="37783000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36085000" />
+    <option name="totallyTimeSpent" value="37783000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
@@ -288,7 +300,7 @@
       <window_info anchor="bottom" id="Terminal" sideWeight="0.49723756" weight="0.43288085" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19810577" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.19810577" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="right" id="Database" sideWeight="0.49773756" weight="0.32991317" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32880846" />
@@ -312,7 +324,7 @@
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.32880846" />
       <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="5" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.19810577" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.19810577" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Theme Preview" order="2" />
       <window_info anchor="bottom" id="TODO" order="11" />
@@ -338,6 +350,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -410,16 +432,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qrcode.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1275">
-          <folding>
-            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/add_funds/add-funds-controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -448,13 +460,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/qcode-decoder.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="1" column="15082" selection-start-line="1" selection-start-column="15072" selection-end-line="1" selection-end-column="15082" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/recieve/recieve-controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -476,10 +481,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/qcode-decoder.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="1" column="15082" selection-start-line="1" selection-start-column="15072" selection-end-line="1" selection-end-column="15082" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qrcode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204">
+          <folding>
+            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/recieve/recieve-template.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="72" column="44" lean-forward="true" selection-start-line="72" selection-start-column="44" selection-end-line="72" selection-end-column="44" />
+        <state relative-caret-position="417">
+          <caret line="67" column="11" lean-forward="true" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="11" />
           <folding>
             <element signature="n#style#0;n#video#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
           </folding>

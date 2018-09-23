@@ -56,6 +56,17 @@ class RecieveTemplate {
 
         const qr = new QCodeDecoder();
 
+        qr.getVideoSources(function (err, sources) {
+
+            console.log(sources);
+
+            if (sources !== undefined && sources.length > 1) {
+                const secondCameraId = sources[sources.length -1].id;
+                qr.setSourceId(secondCameraId);
+            }
+
+        });
+
         qr.decodeFromCamera(video, function(er,res) {
 
             if (res !== undefined && qr !== undefined){
