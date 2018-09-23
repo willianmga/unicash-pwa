@@ -114,6 +114,27 @@ class TransactionService {
 
     }
 
+    recieve(data) {
+        let ctr = this;
+
+        return new Promise(function (resolve, reject) {
+
+            const transaction = {
+                "type": "RECEBIMENTO",
+                "amount": data.amount,
+                "description": "Recebimento via QRCode",
+                "timestamp": new Date()
+            };
+
+            try {
+                resolve(ctr._addTransaction(transaction));
+            } catch (e) {
+                reject(e);
+            }
+
+        });
+    }
+
     _addTransaction(transaction) {
 
         if (this._checkFunds(transaction)) {

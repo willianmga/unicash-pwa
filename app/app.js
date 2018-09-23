@@ -60,4 +60,9 @@ class App {
         new QRCode(document.getElementById("qrcode"), value);
     }
 
+    recieve(qrCode){
+        let value = parseFloat(qrCode);
+        this.recieveController.recieve(value);
+    }
+
 }
