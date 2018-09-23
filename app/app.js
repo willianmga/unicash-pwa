@@ -22,7 +22,7 @@ class App {
     adicionarValor() {
 
         const data = {
-            "amount": document.querySelector("#valor").value
+            "amount": parseFloat(document.querySelector("#valor").value)
         };
 
         this.addFundsController.addTransaction(data);
