@@ -24,7 +24,7 @@ class PaymentController {
                 console.log("Deu bom no pagamento :)");
                 console.log(paymentResponse);
 
-                setTimeout(controller.renderHome(), 5000);
+                setTimeout(() => controller.renderHome(), 5000);
 
             })
             .catch((error) => {

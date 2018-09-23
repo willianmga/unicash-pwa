@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6133df39-0455-4bd0-bd6c-7a4b31ac56e8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/payment/payment-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/payment/payment-controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/payment/payment-template.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/payment/payment-template.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/service/transaction-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/service/transaction-service.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,8 +25,8 @@
       <file leaf-file-name="payment-controller.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/payment/payment-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+            <state relative-caret-position="187">
+              <caret line="26" column="33" lean-forward="true" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -46,8 +43,8 @@
       <file leaf-file-name="refund-money-controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/refund-money/refund-money-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="14" selection-start-line="14" selection-end-line="30" selection-end-column="15" />
+            <state relative-caret-position="199">
+              <caret line="15" selection-start-line="31" selection-start-column="18" selection-end-line="32" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -239,12 +236,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1537667408928</updated>
-      <workItem from="1537667410340" duration="21724000" />
+      <workItem from="1537667410340" duration="22021000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21724000" />
+    <option name="totallyTimeSpent" value="22021000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
@@ -260,10 +257,10 @@
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" sideWeight="0.4988161" weight="0.43288085" />
+      <window_info active="true" anchor="bottom" id="Terminal" sideWeight="0.4988161" visible="true" weight="0.43288085" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19810577" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19810577" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="right" id="Database" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32880846" />
@@ -388,8 +385,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/refund-money/refund-money-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="14" selection-start-line="14" selection-end-line="30" selection-end-column="15" />
+        <state relative-caret-position="199">
+          <caret line="15" selection-start-line="31" selection-start-column="18" selection-end-line="32" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -426,8 +423,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/payment/payment-controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+        <state relative-caret-position="187">
+          <caret line="26" column="33" lean-forward="true" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
         </state>
       </provider>
     </entry>
