@@ -2,6 +2,7 @@ var cacheName = 'cache-one';
 
 var appShellFiles = [
   '/app/app.js',
+  '/app/account/account-controller.js',
   '/app/home/home-template.js',
   '/app/home/home-controller.js',
   '/app/add_founds/add-founds-template.js',
