@@ -16,14 +16,13 @@ class PaymentController {
             throw new Error("Valor informado inválido!");
         }
 
-        controller.generateQrCode(amount.toString());
-
         const data = {
             "amount": amount
         };
 
         this.transactionService.pay(data)
             .then((paymentResponse) => {
+                controller.generateQrCode(amount.toString());
                 setTimeout(() => controller.renderHome(), 5000);
             })
             .catch((error) => {
