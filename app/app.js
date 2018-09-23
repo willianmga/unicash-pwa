@@ -2,9 +2,8 @@
 class App {
 
     constructor() {
-        this.loginTemplate = new LoginTemplate();
         this.homeTemplate = new HomeTemplate();
-        this.renderLogin();
+        this.renderHome();
     }
 
     renderLogin() {
