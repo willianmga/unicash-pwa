@@ -4,9 +4,11 @@ class HomeController {
     constructor() {
 
         this.homeTemplate = new HomeTemplate();
+        this.historyController = new HistoryController();
 
         this.summaryData = {
-            'balance': 50
+            "balance": this.historyController.getBalance(),
+            "historySummary": this.historyController.getHistorySummary()
         };
 
     }
