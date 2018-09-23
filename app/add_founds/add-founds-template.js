@@ -9,42 +9,43 @@ class AddFoundsTemplate {
             </nav>
             <main>
                 <div class="container">
-                    <div class="row">
-                        <form class="col s12">
-                            <div class="row">
-                                <div class="input-field col s12">
-                                <input id="valor" type="text" class="validate">
-                                <label for="valor">Valor</label>
-                                </div>
+                <br>
+                <br>
+                <div class="row">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s12">
+                            <input id="valor" type="text" class="validate text-blue">
+                            <label for="valor">Valor</label>
                             </div>
-                            <div class="row">
-                                <div class="input-field col s12">
-                                <input id="numero-cartao" type="number" class="validate">
-                                <label for="numero-cartao">Nº Cartão</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s12">
-                                <input id="nome" type="text" class="validate">
-                                <label for="nome">Nome</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s6">
-                                    <input id="validade" type="text" class="validate">
-                                    <label for="validade">Validade</label>
-                                </div>
-                                <div class="input-field col s6">
-                                    <input id="cod-seguranca" type="number" class="validate">
-                                    <label for="cod-seguranca">Código de Segurança</label>
-                                </div>
-                            </div>
-                        </form>
-                        <div class="center-align">
-                            <button class="btn waves-effect waves-light btn-large blue" name="action">Submit
-                                <i class="material-icons right">send</i>
-                            </button>
                         </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                            <input id="numero-cartao" type="number" class="validate text-blue">
+                            <label for="numero-cartao">Nº Cartão</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                            <input id="nome" type="text" class="validate text-blue">
+                            <label for="nome">Nome</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="validade" type="text" class="validate text-blue">
+                                <label for="validade">Validade</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="cod-seguranca" type="number" class="validate text-blue">
+                                <label for="cod-seguranca">Código de Segurança</label>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="center-align">
+                        <button class="btn waves-effect waves-light btn-large blue" name="action">Submit
+                            <i class="material-icons right">send</i>
+                        </button>
                     </div>
                 </div>
             </main>

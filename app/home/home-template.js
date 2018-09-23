@@ -15,7 +15,7 @@ class HomeTemplate {
                     <div class="container">
                         <div class="row">
                             <div class="col s12">
-                                <h3 class="center-align">R$ ${summary.balance}</h3>
+                                <h3 class="center-align">R$ ${summary.balance.toFixed(2)}</h3>
                                 <p class="center-align">Saldo</p>                            
                             </div>
                         </div>
