@@ -1,6 +1,6 @@
 class RefundMoneyTemplate{
 
-    render(){
+    render(saldo){
         document.querySelector("#content").innerHTML = `
             <nav class="nav-extended blue">
                 <div class="nav-wrapper">
@@ -45,9 +45,9 @@ class RefundMoneyTemplate{
                             <input id="valor" type="number" class="validate text-blue">
                             <label for="valor">Valor</label>
                             </div>
-                            <div class="input-field col s6">
-                            <input disabled id="saldo" type="number" class="validate text-blue">
-                            <label for="saldo">Saldo</label>
+                            <div class="col s6">
+                                <br>
+                                <p>Saldo: R$ ${saldo.toFixed(2)}</p>
                             </div>
                         </div>
                     </form>
@@ -94,7 +94,7 @@ class RefundMoneyTemplate{
                     $('select').formSelect();
                 })
             </script>           
-        `
+        `;
     }
 
 }
