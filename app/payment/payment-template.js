@@ -25,10 +25,12 @@ class PaymentTemplate{
                         <i class="material-icons right">send</i>
                     </button>
                 </div>
+                <div id="qrcode">
+                
+                </div>                
                 <div class="center-align col s12">
                     <div class="col s12">
-                        <div id="qrcode">
-                        </div>
+                        
                     </div>
                 </div>
             </div>

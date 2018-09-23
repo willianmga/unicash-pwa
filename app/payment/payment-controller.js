@@ -12,7 +12,11 @@ class PaymentController {
 
     pay(amount) {
 
-        controller.generateQrCode("https://github.com/willianmga/unicash-pwa");
+        if (isNaN(amount)) {
+            throw new Error("Valor informado inválido!");
+        }
+
+        controller.generateQrCode(amount.toString());
 
         const data = {
             "amount": amount
