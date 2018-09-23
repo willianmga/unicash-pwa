@@ -7,7 +7,7 @@ var appShellFiles = [
   '/app/account/account-controller.js',
   '/app/home/home-template.js',
   '/app/home/home-controller.js',
-  '/app/add_founds/add-founds-template.js',
+  '/app/add_funds/add-funds-template.js',
   '/app/history/history-controller.js',
   '/materialize.css',
   '/materialize.js'

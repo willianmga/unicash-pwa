@@ -42,7 +42,7 @@ class TransactionService {
 
         return new Promise(function(resolve, reject) {
 
-            if (this.checkFounds(transaction)) {
+            if (this.checkFunds(transaction)) {
                 this.historySummary.push(transaction);
                 this.currentBalance = this.currentBalance + transaction.amount;
             } else {
@@ -52,7 +52,7 @@ class TransactionService {
         });
     }
 
-    checkFounds(transaction) {
+    checkFunds(transaction) {
 
         if (transaction.type === "PAGAMENTO" || transaction.type === "RETIRADA") {
             if (this.currentBalance - transaction.amount <= 0) {

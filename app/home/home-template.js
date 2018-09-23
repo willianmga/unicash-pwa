@@ -49,7 +49,7 @@ class HomeTemplate {
                         <i class="medium blue-text material-icons">perm_identity</i>
                         <span class="medium blue-text">Perfil</span>
                     </div>
-                    <div class="col s3 center-align" onclick="controller.renderAddFoundsTemplate()">
+                    <div class="col s3 center-align" onclick="controller.renderAddFundsTemplate()">
                         <i class="medium blue-text text-lighten-3 material-icons">add</i>
                         <span class="medium blue-text text-lighten-3">Adicionar</span>
                     </div>
