@@ -1,9 +1,9 @@
-
 class App {
 
     constructor() {
         this.homeController = new HomeController();
         this.addFoundsTemplate = new AddFoundsTemplate();
+        this.refoundMoneyTemplate = new RefoundMoneyTemplate();
         this.renderHome();
     }
 
@@ -13,6 +13,10 @@ class App {
 
     renderAddFoundsTemplate() {
         this.addFoundsTemplate.render();
+    }
+
+    renderRefoundMoneyTemplate() {
+        this.refoundMoneyTemplate.render();
     }
 
 }

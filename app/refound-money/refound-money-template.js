@@ -1,4 +1,4 @@
-class AddFoundsTemplate {
+class RefoundMoneyTemplate{
 
     render(){
         document.querySelector("#content").innerHTML = `
@@ -14,31 +14,40 @@ class AddFoundsTemplate {
                 <div class="row">
                     <form class="col s12">
                         <div class="row">
-                            <div class="input-field col s12">
-                            <input id="valor" type="text" class="validate text-blue">
+                            <label>Banco</label>
+                            <select class="browser-default">
+                                <option value="0" selected>Itau S/A</option>
+                                <option value="1">Bradesco</option>
+                                <option value="2">Banco do Brasil</option>
+                                <option value="3">Caixa</option>
+                                <option value="4">Santander</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s6">
+                            <input id="agencia" type="number" class="validate text-blue">
+                            <label for="agencia">Agência</label>
+                            </div>
+                            <div class="input-field col s6">
+                            <input id="conta" type="text" class="validate text-blue">
+                            <label for="conta">Conta</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label>Tipo de Conta</label>
+                            <select class="browser-default">
+                                <option value="0" selected>Conta Corrente</option>
+                                <option value="1">Conta Poupança</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s6">
+                            <input id="valor" type="number" class="validate text-blue">
                             <label for="valor">Valor</label>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                            <input id="numero-cartao" type="number" class="validate text-blue">
-                            <label for="numero-cartao">Nº Cartão</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                            <input id="nome" type="text" class="validate text-blue">
-                            <label for="nome">Nome</label>
-                            </div>
-                        </div>
-                        <div class="row">
                             <div class="input-field col s6">
-                                <input id="validade" type="text" class="validate text-blue">
-                                <label for="validade">Validade</label>
-                            </div>
-                            <div class="input-field col s6">
-                                <input id="cod-seguranca" type="number" class="validate text-blue">
-                                <label for="cod-seguranca">Código de Segurança</label>
+                            <input disabled id="saldo" type="number" class="validate text-blue">
+                            <label for="saldo">Saldo</label>
                             </div>
                         </div>
                     </form>
@@ -56,16 +65,16 @@ class AddFoundsTemplate {
                         <span class="medium blue-text text-lighten-3">Adicionar</span>
                     </div>
                     <div class="col s3 center-align" onclick="controller.renderRefoundMoneyTemplate()">
-                        <i class="medium blue-text text-lighten-3 material-icons">money</i>
-                        <span class="medium blue-text text-lighten-3">Recuperar</span>
+                        <i class="medium blue-text material-icons">money</i>
+                        <span class="medium blue-text">Recuperar</span>
                     </div>
                     <div class="col s3 center-align" onclick="controller.renderHome()">
                         <i class="medium blue-text text-lighten-3 material-icons">perm_identity</i>
                         <span class="medium blue-text text-lighten-3">Perfil</span>
                     </div>
                     <div class="col s3 center-align" onclick="controller.renderAddFoundsTemplate()">
-                        <i class="medium blue-text material-icons" >add</i>
-                        <span class="medium blue-text">Adicionar</span>
+                        <i class="medium blue-text text-lighten-3 material-icons" >add</i>
+                        <span class="medium blue-text text-lighten-3">Adicionar</span>
                     </div>
                 </div>
             </footer>       
@@ -75,7 +84,13 @@ class AddFoundsTemplate {
                 bottom: 0;
                 width: 100%;
             }
-            </style>              
+            </style>   
+            <script>
+                $(document).ready(function(){
+                    $('select').formSelect();
+                })
+            </script>           
         `
     }
+
 }

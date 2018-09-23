@@ -41,9 +41,9 @@ class HomeTemplate {
                         <i class="medium blue-text text-lighten-3 material-icons">add</i>
                         <span class="medium blue-text text-lighten-3">Adicionar</span>
                     </div>
-                    <div class="col s3 center-align">
-                        <i class="medium blue-text text-lighten-3 material-icons">add</i>
-                        <span class="medium blue-text text-lighten-3">Adicionar</span>
+                    <div class="col s3 center-align" onclick="controller.renderRefoundMoneyTemplate()">
+                        <i class="medium blue-text text-lighten-3 material-icons">money</i>
+                        <span class="medium blue-text text-lighten-3">Recuperar</span>
                     </div>
                     <div class="col s3 center-align" onclick="controller.renderHome()">
                         <i class="medium blue-text material-icons">perm_identity</i>
