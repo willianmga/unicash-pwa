@@ -31,21 +31,25 @@ class PaymentTemplate{
         </main>
         <footer class="page-footer footer-fixed grey lighten-4">
             <div class="row">
-                <div class="col s3 center-align" onclick="controller.renderPayment()">
+                <div class="col s2 center-align" onclick="controller.renderPayment()">
                     <i class="medium blue-text material-icons">payment</i>
-                    <span class="medium blue-text">Pagar</span>
+                    <p class="medium blue-text">Pagar</p>
                 </div>
-                <div class="col s3 center-align" onclick="controller.renderRefundMoneyTemplate()">
-                    <i class="medium blue-text text-lighten-3 material-icons">money</i>
-                    <span class="medium blue-text text-lighten-3">Recuperar</span>
+                <div class="col s2 center-align" onclick="controller.renderPayment()">
+                    <i class="medium blue-text text-lighten-3 material-icons">camera</i>
+                    <p class="medium blue-text text-lighten-3">Receber</p>
                 </div>
-                <div class="col s3 center-align" onclick="controller.renderHome()">
+                <div class="col s4 center-align" onclick="controller.renderHome()">
                     <i class="medium blue-text text-lighten-3 material-icons">perm_identity</i>
-                    <span class="medium blue-text text-lighten-3">Perfil</span>
+                    <p class="medium blue-text text-lighten-3">Perfil</p>
                 </div>
-                <div class="col s3 center-align" onclick="controller.renderAddFundsTemplate()">
+                <div class="col s2 center-align" onclick="controller.renderRefundMoneyTemplate()">
+                    <i class="medium blue-text text-lighten-3 material-icons">money</i>
+                    <p class="medium blue-text text-lighten-3">Recuperar</p>
+                </div>
+                <div class="col s2 center-align" onclick="controller.renderAddFundsTemplate()">
                     <i class="medium blue-text text-lighten-3 material-icons" >add</i>
-                    <span class="medium blue-text text-lighten-3">Adicionar</span>
+                    <p class="medium blue-text text-lighten-3">Adicionar</p>
                 </div>
             </div>
         </footer>       
