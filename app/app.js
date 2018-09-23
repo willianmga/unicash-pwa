@@ -6,11 +6,8 @@ class App {
         this.renderHome();
     }
 
-    renderLogin() {
-        this.loginTemplate.render();
-    }
-
     renderHome() {
         this.homeController.render();
     }
+
 }
