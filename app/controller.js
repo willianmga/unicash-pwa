@@ -2,7 +2,7 @@ class Controller {
 
     constructor() {
         this.loginTemplate = new LoginTemplate();
-        this.anotherTemplateRender = new AnotherTemplate();
+        this.homeTemplate = new HomeTemplate();
         this.renderLogin();
     }
 
@@ -10,7 +10,7 @@ class Controller {
         this.loginTemplate.render();
     }
 
-    renderAnotherTemplate() {
-        this.anotherTemplateRender.render();
+    renderHome() {
+        this.homeTemplate.render();
     }
 }
