@@ -20,18 +20,10 @@ class PaymentController {
 
         this.transactionService.pay(data)
             .then((paymentResponse) => {
-
-                console.log("Deu bom no pagamento :)");
-                console.log(paymentResponse);
-
                 setTimeout(() => controller.renderHome(), 5000);
-
             })
             .catch((error) => {
-
-                console.log("Deu ruim no pagamento :(");
-                console.log(error);
-
+                controller.errorMessage(error.message);
             });
 
     }

@@ -60,4 +60,24 @@ class App {
         new QRCode(document.getElementById("qrcode"), value);
     }
 
+    successMessage(message) {
+
+        M.toast({
+            html: message,
+            classes: "green"
+        });
+
+        controller.renderHome();
+    }
+
+    errorMessage(message) {
+
+        M.toast({
+            html: message,
+            classes: "red"
+        });
+
+        controller.renderHome();
+    }
+
 }
