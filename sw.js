@@ -1,8 +1,10 @@
 var cacheName = 'cache-one';
+
 var appShellFiles = [
-  '/app/controller.js',
+  '/app/app.js',
   '/app/login-template.js',
-  '/app/home-template.js',
+  '/app/home/home-template.js',
+  '/app/home/home-controller.js',
   '/materialize.css',
   '/materialize.js'
 ];

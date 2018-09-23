@@ -1,4 +1,11 @@
+
 class HomeTemplate {
+
+    constructor() {
+
+        console.log(new HomeController().sayHello());
+
+    }
 
     render() {
         document.querySelector("#content").innerHTML = `

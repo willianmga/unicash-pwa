@@ -1,4 +1,5 @@
-class Controller {
+
+class App {
 
     constructor() {
         this.loginTemplate = new LoginTemplate();
