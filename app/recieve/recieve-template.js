@@ -1,4 +1,9 @@
+
 class RecieveTemplate{
+
+    constructor() {
+
+    }
 
     render() {
         document.querySelector("#content").innerHTML = `
@@ -47,18 +52,33 @@ class RecieveTemplate{
             }
             </style>  
             `
-            var video =
-            document.getElementById('camera');
-            QCodeDecoder()
-            .decodeFromCamera(video, function(er,res){
-                console.log(res)
-                if(res != undefined){
-                    video = null;
-                    controller.recieve(res);
-                }
-            });
-    }
+        var video = document.getElementById('camera');
 
-    
+        const qr = new QCodeDecoder();
+
+        qr.decodeFromCamera(video, function(er,res) {
+            console.log("Mensagem");
+            console.log(res);
+            console.log("Erro");
+            console.log(er);
+
+            if(res !== undefined && qr !== undefined){
+
+                try {
+
+                    controller.recieve(res);
+
+                    qr.close();
+
+                } catch (e) {
+                    console.log("Errrrroooo");
+                    console.log(e);
+                }
+            }
+        }, true);
+
+        console.log("Cheguei no finalll");
+
+    }
 
 }

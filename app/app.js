@@ -84,4 +84,10 @@ class App {
 
     }
 
+    camera() {
+
+
+
+    }
+
 }

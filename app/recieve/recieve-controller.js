@@ -7,6 +7,7 @@ class RecieveController {
 
     render() {
         this.recieveTemplate.render();
+
     }
 
     recieve(value) {
