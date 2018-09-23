@@ -18,16 +18,16 @@ class RefundMoneyController {
 
         this.transactionsService.refund(data)
             .then((refundResponse) => {
-
                 console.log("Deu bom retirada :)");
                 console.log(refundResponse);
+                controller.renderHome();
 
             })
             .catch((error) => {
 
                 console.log("Deu ruim a retirada :(");
                 console.log(error);
-                
+
             });
 
     }

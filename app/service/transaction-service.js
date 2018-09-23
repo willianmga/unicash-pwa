@@ -117,7 +117,7 @@ class TransactionService {
     _checkFunds(transaction) {
 
         if (transaction.type === "PAGAMENTO" || transaction.type === "RETIRADA") {
-            if (this.currentBalance - transaction.amount <= 0) {
+            if (this.currentBalance - transaction.amount < 0) {
                 return false;
             }
         }
