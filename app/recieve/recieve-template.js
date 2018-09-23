@@ -1,5 +1,5 @@
 
-class RecieveTemplate{
+class RecieveTemplate {
 
     constructor() {
 
@@ -57,20 +57,17 @@ class RecieveTemplate{
         const qr = new QCodeDecoder();
 
         qr.decodeFromCamera(video, function(er,res) {
-            console.log("Mensagem");
-            console.log(res);
-            console.log("Erro");
-            console.log(er);
 
-            if (res !== undefined) {
-                controller.recieve(res);
-                qr.close();
+            if (res !== undefined && qr !== undefined){
+
+                try {
+                    controller.recieve(res);
+                    qr.close();
+                } catch (e) {
+                    console.log(e);
+                }
             }
-
         }, true);
-
-        console.log("Cheguei no finalll");
-
     }
 
 }

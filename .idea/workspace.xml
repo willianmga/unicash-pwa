@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6133df39-0455-4bd0-bd6c-7a4b31ac56e8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/recieve/recieve-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/recieve/recieve-controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/recieve/recieve-template.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/recieve/recieve-template.js" afterDir="false" />
     </list>
@@ -34,16 +32,7 @@
         <entry file="file://$PROJECT_DIR$/app/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="536">
-              <caret line="88" selection-start-line="88" selection-end-line="88" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="payment-controller.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/payment/payment-controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
+              <caret line="89" selection-start-line="89" selection-end-line="89" />
             </state>
           </provider>
         </entry>
@@ -51,8 +40,8 @@
       <file leaf-file-name="recieve-controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/recieve/recieve-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="136">
+              <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -60,8 +49,8 @@
       <file leaf-file-name="recieve-template.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/recieve/recieve-template.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="58" column="50" selection-start-line="58" selection-start-column="50" selection-end-line="58" selection-end-column="50" />
+            <state relative-caret-position="468">
+              <caret line="72" column="44" lean-forward="true" selection-start-line="72" selection-start-column="44" selection-end-line="72" selection-end-column="44" />
               <folding>
                 <element signature="n#style#0;n#video#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
               </folding>
@@ -120,8 +109,8 @@
         <option value="$PROJECT_DIR$/app/service/transaction-service.js" />
         <option value="$PROJECT_DIR$/app/payment/payment-template.js" />
         <option value="$PROJECT_DIR$/app/payment/payment-controller.js" />
-        <option value="$PROJECT_DIR$/app/recieve/recieve-controller.js" />
         <option value="$PROJECT_DIR$/app/app.js" />
+        <option value="$PROJECT_DIR$/app/recieve/recieve-controller.js" />
         <option value="$PROJECT_DIR$/app/recieve/recieve-template.js" />
       </list>
     </option>
@@ -274,12 +263,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1537667408928</updated>
-      <workItem from="1537667410340" duration="35164000" />
+      <workItem from="1537667410340" duration="36085000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35164000" />
+    <option name="totallyTimeSpent" value="36085000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
@@ -299,7 +288,7 @@
       <window_info anchor="bottom" id="Terminal" sideWeight="0.49723756" weight="0.43288085" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19810577" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19810577" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="right" id="Database" sideWeight="0.49773756" weight="0.32991317" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32880846" />
@@ -466,6 +455,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/recieve/recieve-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/payment/payment-controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -476,21 +472,14 @@
     <entry file="file://$PROJECT_DIR$/app/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="536">
-          <caret line="88" selection-start-line="88" selection-end-line="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/recieve/recieve-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/recieve/recieve-template.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="58" column="50" selection-start-line="58" selection-start-column="50" selection-end-line="58" selection-end-column="50" />
+        <state relative-caret-position="468">
+          <caret line="72" column="44" lean-forward="true" selection-start-line="72" selection-start-column="44" selection-end-line="72" selection-end-column="44" />
           <folding>
             <element signature="n#style#0;n#video#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
           </folding>
