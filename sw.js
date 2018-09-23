@@ -1,6 +1,7 @@
 var cacheName = 'cache-one';
 var appShellFiles = [
-  '/two.html'
+  '/app/controller.js',
+  '/app/login-template.js'
 ];
 
 // Installing Service Worker
