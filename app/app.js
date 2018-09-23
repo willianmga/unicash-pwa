@@ -4,9 +4,14 @@ class App {
         this.serviceFactory = new ServiceFactory();
 
         this.homeController = new HomeController();
-        this.refoundMoneyTemplate = new RefoundMoneyTemplate();
-        this.addFundsTemplate = new AddFundsTemplate();
+        this.refondMoneyController = new RefundMoneyController();
+        this.addFundsController = new AddFundsController();
+        this.paymentController = new PaymentController();
         this.renderHome();
+    }
+
+    renderPayment() {
+        this.paymentController.render();
     }
 
     renderHome() {
@@ -14,11 +19,11 @@ class App {
     }
 
     renderAddFundsTemplate() {
-        this.addFundsTemplate.render();
+        this.addFundsController.render();
     }
 
-    renderRefoundMoneyTemplate() {
-        this.refoundMoneyTemplate.render();
+    renderRefundMoneyTemplate() {
+        this.refondMoneyController.render();
     }
 
 }
