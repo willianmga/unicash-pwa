@@ -62,19 +62,11 @@ class RecieveTemplate{
             console.log("Erro");
             console.log(er);
 
-            if(res !== undefined && qr !== undefined){
-
-                try {
-
-                    controller.recieve(res);
-
-                    qr.close();
-
-                } catch (e) {
-                    console.log("Errrrroooo");
-                    console.log(e);
-                }
+            if (res !== undefined) {
+                controller.recieve(res);
+                qr.close();
             }
+
         }, true);
 
         console.log("Cheguei no finalll");
