@@ -12,6 +12,7 @@ class RecieveTemplate{
                 <br>
                 <br>
                 <div class="row">
+                    <video style="width: 100%;" id="camera" autoplay></video>
                 </div>
             </main>
             <footer class="page-footer footer-fixed grey lighten-4">
@@ -44,8 +45,20 @@ class RecieveTemplate{
                 bottom: 0;
                 width: 100%;
             }
-            </style>              
-        `
+            </style>  
+            `
+            var video =
+            document.getElementById('camera');
+            QCodeDecoder()
+            .decodeFromCamera(video, function(er,res){
+                console.log(res)
+                if(res != undefined){
+                    video = null;
+                    controller.recieve(res);
+                }
+            });
     }
+
+    
 
 }
