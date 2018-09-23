@@ -61,12 +61,35 @@ class TransactionService {
 
     }
 
+    refund(data) {
+
+        let ctr = this;
+
+        return new Promise(function (resolve, reject) {
+
+            if (!ctr._checkBankData(data)) {
+                reject("Dados bancários inválidos");
+            }
+
+            const transaction = {
+                "type": "RETIRADA",
+                "amount": data.amount,
+                "description": "Retirada Dinheiro",
+                "timestamp": new Date()
+            };
+
+            resolve(ctr._addTransaction(transaction));
+
+        });
+
+    }
+
     _addTransaction(transaction) {
 
         if (this._checkFunds(transaction)) {
 
+            this._updateCurrentBalance(transaction);
             this.historySummary.push(transaction);
-            this.currentBalance = this.currentBalance + transaction.amount;
 
             return {
                 "status": "SUCESSO",
@@ -77,6 +100,18 @@ class TransactionService {
         }
 
         throw new Error("Saldo insuficiente para executar a transação");
+    }
+
+    _updateCurrentBalance(transaction) {
+
+        if (transaction.type === "DEPOSITO" || transaction.type === "RECEBIMENTO") {
+            this.currentBalance += transaction.amount;
+        } else if (transaction.type === "PAGAMENTO" || transaction.type === "RETIRADA") {
+            this.currentBalance -= transaction.amount;
+        } else {
+            throw new Error("Tipo de transação desconhecida. Impossível continuar");
+        }
+
     }
 
     _checkFunds(transaction) {
@@ -91,6 +126,10 @@ class TransactionService {
     }
 
     _checkCard(data) {
+        return true;
+    }
+
+    _checkBankData(data) {
         return true;
     }
 

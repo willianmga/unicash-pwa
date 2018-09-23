@@ -8,7 +8,6 @@ class App {
         this.refondMoneyController = new RefundMoneyController();
         this.addFundsController = new AddFundsController();
         this.paymentController = new PaymentController();
-        this.addFundsController = new AddFundsController();
         this.renderHome();
     }
 
@@ -25,21 +24,28 @@ class App {
     }
 
     renderRefundMoneyTemplate() {
-        this.refondMoneyController.render();
+        this.refundMoneyController.render();
     }
 
     renderRecieveTemplate(){
         this.recieveController.render();
     }
 
-    adicionarValor() {
+    deposit() {
 
         const data = {
             "amount": parseFloat(document.querySelector("#valor").value)
         };
 
-        this.addFundsController.addTransaction(data);
+        this.addFundsController.deposit(data);
     }
 
+    refund() {
+
+        const amount = parseFloat(document.querySelector("#valor").value);
+
+        this.refundMoneyController.refund(amount);
+
+    }
 
 }

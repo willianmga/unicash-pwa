@@ -10,7 +10,7 @@ class AddFundsController {
         this.addFundsTemplate.render();
     }
 
-    addTransaction(data) {
+    deposit(data) {
 
         this.transactionsService.deposit(data).then((transactionResponse) => {
             console.log("Deu bom a transação :)");
