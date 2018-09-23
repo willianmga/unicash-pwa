@@ -61,7 +61,7 @@ class RecieveTemplate {
             console.log(sources);
 
             if (sources !== undefined && sources.length > 1) {
-                const secondCameraId = sources[sources.length -1].id;
+                const secondCameraId = sources[0].id;
                 qr.setSourceId(secondCameraId);
             }
 
