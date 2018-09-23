@@ -1,6 +1,10 @@
 
 class AddFundsTemplate {
 
+    constructor() {
+
+    }
+
     render(){
         document.querySelector("#content").innerHTML = `
             <nav class="nav-extended blue">
@@ -42,7 +46,7 @@ class AddFundsTemplate {
                             </div>
                         </form>
                         <div class="center-align">
-                            <button class="btn waves-effect waves-light btn-large blue" name="action">Submit
+                            <button class="btn waves-effect waves-light btn-large blue" name="action" onclick="controller.adicionarValor()">Submit
                                 <i class="material-icons right">send</i>
                             </button>
                         </div>
@@ -78,4 +82,5 @@ class AddFundsTemplate {
             </style>              
         `
     }
+
 }

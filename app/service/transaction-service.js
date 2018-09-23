@@ -40,9 +40,11 @@ class TransactionService {
 
     deposit(data) {
 
+        let ctr = this;
+
         return new Promise(function (resolve, reject) {
 
-            if (!this._checkCard(data)) {
+            if (!ctr._checkCard(data)) {
                 reject("Dados do cartão de crédito inválidos.");
             }
 
@@ -53,7 +55,7 @@ class TransactionService {
                 "timestamp": new Date()
             };
 
-            resolve(this._addTransaction(transaction));
+            resolve(ctr._addTransaction(transaction));
 
         });
 
