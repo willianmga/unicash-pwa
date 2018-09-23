@@ -2,14 +2,22 @@ class HomeTemplate {
 
     render() {
         document.querySelector("#content").innerHTML = `
-            <nav class="green darken-1">
+            <nav class="nav-extended green darken-1">
                 <div class="nav-wrapper">
-                <a href="#" class="brand-logo">Unicash</a>
+                    <a href="#" class="brand-logo">Unicash</a>
+                </div>
+                <div class="nav-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col s12">
+                                <h3 class="center-align">R$ 50,00</h3>
+                                <p class="center-align">Saldo</p>                            
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </nav>
             <div class="container">
-                <h3 class="center-align">R$ 50,00</h3>
-                <p class="center-align">Saldo</p>
                 <div class="row">
                     <div class="col s12">
                         <div class="card-panel">
