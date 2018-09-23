@@ -49,16 +49,13 @@ class RecieveTemplate{
             `
             var video =
             document.getElementById('camera');
-            QCodeDecoder()
-            .decodeFromCamera(video, function(er,res){
+            let qr = QCodeDecoder();
+            qr.decodeFromCamera(video, function(er,res){
                 console.log(res)
                 if(res != undefined){
-                    video = null;
+                    qr.stop();
                     controller.recieve(res);
                 }
             });
     }
-
-    
-
 }

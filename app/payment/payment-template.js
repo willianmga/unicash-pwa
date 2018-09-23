@@ -12,21 +12,22 @@ class PaymentTemplate{
             <br>
             <br>
             <div class="row">
-                <form class="col s12">
-                    <div class="row">
-                        <div class="input-field col s12">
-                        <input id="valor" type="number" class="validate text-blue">
-                        <label for="valor">Valor</label>
+                <div id="qrcode-disabled">
+                    <form class="col s12">
+                        <div class="row">
+                            <div class="input-field col s12">
+                            <input id="valor" type="number" class="validate text-blue">
+                            <label for="valor">Valor</label>
+                            </div>
                         </div>
+                    </form>
+                    <div class="center-align">
+                        <button class="btn waves-effect waves-light btn-large blue" name="action" onclick="controller.pay()">Submit
+                            <i class="material-icons right">send</i>
+                        </button>
                     </div>
-                </form>
-                <div class="center-align">
-                    <button class="btn waves-effect waves-light btn-large blue" name="action" onclick="controller.pay()">Submit
-                        <i class="material-icons right">send</i>
-                    </button>
                 </div>
-                <div id="qrcode">
-                
+                <div id="qrcode" class="center-align">
                 </div>                
                 <div class="center-align col s12">
                     <div class="col s12">

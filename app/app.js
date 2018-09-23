@@ -49,6 +49,7 @@ class App {
     }
 
     pay() {
+        document.querySelector("#qrcode-disabled").style.display = 'none';
 
         const amount = parseFloat(document.querySelector("#valor").value);
 
