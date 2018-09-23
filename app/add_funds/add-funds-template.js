@@ -47,7 +47,7 @@ class AddFundsTemplate {
                             </div>
                         </form>
                     <div class="center-align">
-                        <button class="btn waves-effect waves-light btn-large blue" name="action" onclick="controller.adicionarValor()">Submit
+                        <button class="btn waves-effect waves-light btn-large blue" name="action" onclick="controller.deposit()">Submit
                             <i class="material-icons right">send</i>
                         </button>
                     </div>
