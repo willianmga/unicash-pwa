@@ -3,7 +3,7 @@ class HistoryController {
 
     constructor() {
 
-        this.currentBalance = 0;
+        this.currentBalance = 7;
 
         this.historySummary = [
             {
@@ -33,13 +33,6 @@ class HistoryController {
                 "description": "Cópia de Prova - Unicesumar",
                 "timestamp": "2018-09-23 12:00:00",
                 "balance": 7
-            },
-            {
-                "type": "RETIRADA",
-                "amount": -7,
-                "description": "Retirada Conta Corrente",
-                "timestamp": "2018-09-23 12:00:00",
-                "balance": 0
             }
         ];
 
@@ -51,6 +44,31 @@ class HistoryController {
 
     getHistorySummary() {
         return this.historySummary;
+    }
+
+    addTransaction(transaction) {
+
+        return new Promise(function(resolve, reject) {
+
+            if (this.checkFounds(transaction)) {
+                this.historySummary.push(transaction);
+                this.currentBalance = this.currentBalance + transaction.amount;
+            } else {
+                reject(Error("Saldo insuficiente para executar a transação"));
+            }
+
+        });
+    }
+
+    checkFounds(transaction) {
+
+        if (transaction.type === "PAGAMENTO" || transaction.type === "RETIRADA") {
+            if (this.currentBalance - transaction.amount <= 0) {
+                return false;
+            }
+        }
+
+        return true;
     }
 
 }
