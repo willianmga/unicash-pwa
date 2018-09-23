@@ -1,19 +1,21 @@
-var cacheName = 'cache-one';
+var cacheName = 'cache-three';
 
 var appShellFiles = [
-  '/app/app.js',
-  '/app/service/service-factory.js',
-  '/app/service/transaction-service.js',
-  '/app/account/account-controller.js',
-  '/app/home/home-template.js',
-  '/app/home/home-controller.js',
-  '/app/payment/payment-controller.js',
-  '/app/payment/payment-template.js',
-  '/app/refund-money/refund-money-controller.js',
-  '/app/refund-money/refund-money-template.js',
-  '/app/add_funds/add-funds-controller.js',
-  '/app/add_funds/add-funds-template.js',
-  '/app/history/history-controller.js',
+  "/app/app.js",
+  "/app/service/service-factory.js",
+  "/app/service/transaction-service.js",
+  "/app/account/account-controller.js",
+  "/app/history/history-controller.js",
+  "/app/home/home-controller.js",
+  "/app/home/home-template.js",
+  "/app/refund-money/refund-money-controller.js",
+  "/app/refund-money/refund-money-template.js",
+  "/app/add_funds/add-funds-controller.js",
+  "/app/add_funds/add-funds-template.js",
+  "/app/payment/payment-controller.js",
+  "/app/payment/payment-template.js",
+  "/app/recieve/recieve-controller.js",
+  "/app/recieve/recieve-template.js",
   '/materialize.css',
   '/materialize.js'
 ];

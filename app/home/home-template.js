@@ -1,11 +1,7 @@
-
 class HomeTemplate {
 
-    constructor() {
-
-    }
-
     render(summary) {
+        let historySummary = JSON.parse(JSON.stringify(summary.historySummary));
         document.querySelector("#content").innerHTML = `
             <nav class="nav-extended blue">
                 <div class="nav-wrapper">
@@ -26,10 +22,9 @@ class HomeTemplate {
                     <div class="row">
                         <div class="col s12">
                             <ul class="collection">
-                                <li class="collection-item">Alvin</li>
-                                <li class="collection-item">Alvin</li>
-                                <li class="collection-item">Alvin</li>
-                                <li class="collection-item">Alvin</li>
+                                ${historySummary.reverse().map(function(item){
+                                    return `<li class="collection-item">${item.description}</li>`
+                                }).join("")}
                             </ul>
                         </div>
                     </div>  
