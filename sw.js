@@ -3,7 +3,8 @@ var appShellFiles = [
   '/app/controller.js',
   '/app/login-template.js',
   '/app/home-template.js',
-  '/bootstrap.css'
+  '/materialize.css',
+  '/materialize.js'
 ];
 
 // Installing Service Worker
