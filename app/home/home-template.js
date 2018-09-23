@@ -9,7 +9,7 @@ class HomeTemplate {
 
     render() {
         document.querySelector("#content").innerHTML = `
-            <nav class="nav-extended green darken-1">
+            <nav class="nav-extended blue">
                 <div class="nav-wrapper">
                     <a href="#" class="brand-logo">Unicash</a>
                 </div>
@@ -27,16 +27,12 @@ class HomeTemplate {
                 <div class="container">
                     <div class="row">
                         <div class="col s12">
-                            <div class="card-panel">
-                                <span>Multa bibliotecária</span>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col s12">
-                                <div class="card-panel">
-                                    <span>Multa bibliotecária</span>
-                                </div>
-                            </div>
+                            <ul class="collection">
+                                <li class="collection-item">Alvin</li>
+                                <li class="collection-item">Alvin</li>
+                                <li class="collection-item">Alvin</li>
+                                <li class="collection-item">Alvin</li>
+                            </ul>
                         </div>
                     </div>  
                 </div>
@@ -44,20 +40,20 @@ class HomeTemplate {
             <footer class="page-footer footer-fixed grey lighten-4">
                 <div class="row">
                     <div class="col s3 center-align">
-                        <i class="medium green-text text-lighten-3 material-icons">add</i>
-                        <span class="medium green-text text-lighten-3">Adicionar</span>
+                        <i class="medium blue-text text-lighten-3 material-icons">add</i>
+                        <span class="medium blue-text text-lighten-3">Adicionar</span>
                     </div>
                     <div class="col s3 center-align">
-                        <i class="medium green-text text-lighten-3 material-icons">add</i>
-                        <span class="medium green-text text-lighten-3">Adicionar</span>
+                        <i class="medium blue-text text-lighten-3 material-icons">add</i>
+                        <span class="medium blue-text text-lighten-3">Adicionar</span>
                     </div>
                     <div class="col s3 center-align">
-                        <i class="medium green-text material-icons">perm_identity</i>
-                        <span class="medium green-text">Perfil</span>
+                        <i class="medium blue-text material-icons">perm_identity</i>
+                        <span class="medium blue-text">Perfil</span>
                     </div>
                     <div class="col s3 center-align">
-                        <i class="medium green-text text-lighten-3 material-icons">add</i>
-                        <span class="medium green-text text-lighten-3">Adicionar</span>
+                        <i class="medium blue-text text-lighten-3 material-icons">add</i>
+                        <span class="medium blue-text text-lighten-3">Adicionar</span>
                     </div>
                 </div>
             </footer>       
