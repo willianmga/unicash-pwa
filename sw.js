@@ -4,6 +4,7 @@ var appShellFiles = [
   '/app/app.js',
   '/app/home/home-template.js',
   '/app/home/home-controller.js',
+  '/app/add_founds/add-founds-template.js',
   '/materialize.css',
   '/materialize.js'
 ];
