@@ -7,7 +7,8 @@ class RefundMoneyController {
     }
 
     render(){
-        this.refundMoneyTemplate.render();
+        let saldo = this.transactionsService.getBalance();
+        this.refundMoneyTemplate.render(saldo);
     }
 
     refund(amount) {
@@ -18,16 +19,17 @@ class RefundMoneyController {
 
         this.transactionsService.refund(data)
             .then((refundResponse) => {
-                console.log("Deu bom retirada :)");
-                console.log(refundResponse);
+                M.toast({
+                    html: 'Operação concluída com sucesso',
+                    classes: 'green'
+                })
                 controller.renderHome();
-
             })
             .catch((error) => {
-
-                console.log("Deu ruim a retirada :(");
-                console.log(error);
-
+                M.toast({
+                    html: "Ops, ocorreu um erro inesperado",
+                    classes: 'red'
+                })
             });
 
     }
