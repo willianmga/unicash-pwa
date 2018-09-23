@@ -35,7 +35,7 @@ class PaymentTemplate{
                     <i class="medium blue-text material-icons">payment</i>
                     <p class="medium blue-text">Pagar</p>
                 </div>
-                <div class="col s2 center-align" onclick="controller.renderPayment()">
+                <div class="col s2 center-align" onclick="controller.renderRecieveTemplate()">
                     <i class="medium blue-text text-lighten-3 material-icons">camera</i>
                     <p class="medium blue-text text-lighten-3">Receber</p>
                 </div>

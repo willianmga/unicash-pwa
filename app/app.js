@@ -4,6 +4,7 @@ class App {
         this.serviceFactory = new ServiceFactory();
 
         this.homeController = new HomeController();
+        this.recieveController = new RecieveController();
         this.refondMoneyController = new RefundMoneyController();
         this.addFundsController = new AddFundsController();
         this.paymentController = new PaymentController();
@@ -25,6 +26,10 @@ class App {
 
     renderRefundMoneyTemplate() {
         this.refondMoneyController.render();
+    }
+
+    renderRecieveTemplate(){
+        this.recieveController.render();
     }
 
     adicionarValor() {
