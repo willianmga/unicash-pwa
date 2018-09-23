@@ -1,4 +1,4 @@
-class AddFoundsTemplate {
+class AddFundsTemplate {
 
     render(){
         document.querySelector("#content").innerHTML = `
@@ -63,7 +63,7 @@ class AddFoundsTemplate {
                         <i class="medium blue-text text-lighten-3 material-icons">perm_identity</i>
                         <span class="medium blue-text text-lighten-3">Perfil</span>
                     </div>
-                    <div class="col s3 center-align" onclick="controller.renderAddFoundsTemplate()">
+                    <div class="col s3 center-align" onclick="controller.renderAddFundsTemplate()">
                         <i class="medium blue-text material-icons" >add</i>
                         <span class="medium blue-text">Adicionar</span>
                     </div>
