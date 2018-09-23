@@ -6,7 +6,6 @@ class HomeController {
         this.homeTemplate = new HomeTemplate();
         this.transactionService = ServiceFactory.getTransactionService();
         this.summaryData = {};
-
     }
 
     render() {
