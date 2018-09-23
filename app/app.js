@@ -5,7 +5,7 @@ class App {
 
         this.homeController = new HomeController();
         this.recieveController = new RecieveController();
-        this.refondMoneyController = new RefundMoneyController();
+        this.refundMoneyController = new RefundMoneyController();
         this.addFundsController = new AddFundsController();
         this.paymentController = new PaymentController();
         this.renderHome();
