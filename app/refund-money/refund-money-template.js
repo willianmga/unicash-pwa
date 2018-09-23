@@ -61,7 +61,7 @@ class RefundMoneyTemplate{
             <footer class="page-footer footer-fixed grey lighten-4">
                 <div class="row">
                     <div class="col s3 center-align" onclick="controller.renderPayment()">
-                        <i class="medium blue-text text-lighten-3 material-icons">camera</i>
+                        <i class="medium blue-text text-lighten-3 material-icons">payment</i>
                         <span class="medium blue-text text-lighten-3">Pagar</span>
                     </div>
                     <div class="col s3 center-align" onclick="controller.renderRefundMoneyTemplate()">

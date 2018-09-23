@@ -32,7 +32,7 @@ class PaymentTemplate{
         <footer class="page-footer footer-fixed grey lighten-4">
             <div class="row">
                 <div class="col s3 center-align" onclick="controller.renderPayment()">
-                    <i class="medium blue-text material-icons">camera</i>
+                    <i class="medium blue-text material-icons">payment</i>
                     <span class="medium blue-text">Pagar</span>
                 </div>
                 <div class="col s3 center-align" onclick="controller.renderRefundMoneyTemplate()">
