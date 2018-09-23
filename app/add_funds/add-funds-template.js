@@ -1,4 +1,9 @@
+
 class AddFundsTemplate {
+
+    constructor() {
+
+    }
 
     render(){
         document.querySelector("#content").innerHTML = `
@@ -40,6 +45,11 @@ class AddFundsTemplate {
                                 <input id="cod-seguranca" type="number" class="validate text-blue">
                                 <label for="cod-seguranca">Código de Segurança</label>
                             </div>
+                        </form>
+                        <div class="center-align">
+                            <button class="btn waves-effect waves-light btn-large blue" name="action" onclick="controller.adicionarValor()">Submit
+                                <i class="material-icons right">send</i>
+                            </button>
                         </div>
                     </form>
                     <div class="center-align">
@@ -78,4 +88,5 @@ class AddFundsTemplate {
             </style>              
         `
     }
+
 }

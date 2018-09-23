@@ -7,6 +7,7 @@ class App {
         this.refondMoneyController = new RefundMoneyController();
         this.addFundsController = new AddFundsController();
         this.paymentController = new PaymentController();
+        this.addFundsController = new AddFundsController();
         this.renderHome();
     }
 
@@ -24,6 +25,16 @@ class App {
 
     renderRefundMoneyTemplate() {
         this.refondMoneyController.render();
+    }
+
+    adicionarValor() {
+
+        const data = {
+            "amount": parseFloat(document.querySelector("#valor").value)
+        };
+
+        this.addFundsController.addTransaction(data);
+
     }
 
 }
