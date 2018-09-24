@@ -56,16 +56,6 @@ class RecieveTemplate {
 
         const qr = new QCodeDecoder();
 
-        qr.getVideoSources(function (err, sources) {
-
-            console.log(sources);
-
-            if (sources !== undefined && sources.length > 1) {
-                const secondCameraId = sources[0].id;
-                qr.setSourceId(secondCameraId);
-            }
-
-        });
 
         qr.decodeFromCamera(video, function(er,res) {
 
@@ -79,6 +69,22 @@ class RecieveTemplate {
                 }
             }
         }, true);
+
+
+
+        qr.getVideoSources(function (err, sources) {
+
+            console.log(err);
+
+            console.log(sources);
+
+            if (sources !== undefined && sources.length > 1) {
+                const secondCameraId = sources[0].id;
+                qr.setSourceId(secondCameraId);
+            }
+
+        });
+
     }
 
 }
